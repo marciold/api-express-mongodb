@@ -53,12 +53,9 @@ const authenticateJWT = (req, res, next) => {
 };
 
 const routes = (app) => {
-  app.route("/").get((req, res) => {
-    res.status(200).send("Hello world");
-  });
-
   app.use(express.json());
   app.use(usuariosRoutes);
+
   app.use(authenticateJWT);
   app.use(alunosRoutes);
 };

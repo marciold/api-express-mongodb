@@ -39,7 +39,6 @@ class UsuariosController {
     );
 
     res.json({ message: token });
-    console.log("Login efetuado pelo usuário " + user.username);
   }
 }
 
