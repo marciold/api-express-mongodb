@@ -1,8 +1,6 @@
 import express from "express";
 import alunosController from "../controllers/alunosController.js";
 
-// Vamos atender as rotas usando o código escrito lá no controler:
-
 const routes = express.Router();
 
 routes.get("/alunos", alunosController.listarAlunos);
